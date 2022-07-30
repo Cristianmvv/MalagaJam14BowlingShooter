@@ -93,15 +93,15 @@ public class WeaponController : MonoBehaviour
         {
             if (hit.collider.tag == "Enemy")
                 hit.collider.GetComponent<Enemy>().TakeDamage();
-            else if (hit.collider.tag == "Player")
-            {
-                return;
-            }
-            else
-            {
-                GameObject bulletHoleClone = Instantiate(bulletHolePF, hit.point + hit.normal * 0.001f, Quaternion.LookRotation(hit.normal));
-                Destroy(bulletHoleClone, 5f);
-            }
+            //else if (hit.collider.tag == "Player")
+            //{
+            //    return;
+            //}
+            //else
+            //{
+            //    GameObject bulletHoleClone = Instantiate(bulletHolePF, hit.point + hit.normal * 0.001f, Quaternion.LookRotation(hit.normal));
+            //    Destroy(bulletHoleClone, 5f);
+            //}
         }
     }
 

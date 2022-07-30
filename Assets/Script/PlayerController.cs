@@ -22,6 +22,8 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        if (!GameManager.Instance.canMove) return;
+
         groundedPlayer = controller.isGrounded;
         if (groundedPlayer && playerVelocity.y < 0)
         {
