@@ -29,10 +29,10 @@ public class DialoguePleaseDontLookAtThis : MonoBehaviour
         optionsBox.SetActive(true);
         dialogueBox.SetActive(false);
 
-        dialogueOptionsText[0].text = "1-Sí, todos los días.";
-        dialogueOptionsText[1].text = "2-A veces";
-        dialogueOptionsText[2].text = "3-No es asunto tuyo.";
-        dialogueOptionsText[3].text = "4-No, en realidad soy un flojo.";
+        dialogueOptionsText[0].text = "Sí, todos los días.";
+        dialogueOptionsText[1].text = "A veces";
+        dialogueOptionsText[2].text = "No es asunto tuyo.";
+        dialogueOptionsText[3].text = "No, en realidad soy un flojo.";
 
         yield return new WaitForSeconds(0.1f);
         yield return new WaitUntil(() => Input.GetMouseButtonDown(0));
@@ -48,10 +48,10 @@ public class DialoguePleaseDontLookAtThis : MonoBehaviour
         optionsBox.SetActive(true);
         dialogueBox.SetActive(false);
 
-        dialogueOptionsText[0].text = "1-Dormir";
-        dialogueOptionsText[1].text = "2-Comer";
-        dialogueOptionsText[2].text = "3-Lo mismo que tú";
-        dialogueOptionsText[3].text = "";
+        dialogueOptionsText[0].text = "Dormir";
+        dialogueOptionsText[1].text = "Comer";
+        dialogueOptionsText[2].text = "Lo mismo que tú";
+        dialogueOptionsText[3].text = "...";
 
 
         yield return new WaitForSeconds(0.1f);
@@ -68,10 +68,10 @@ public class DialoguePleaseDontLookAtThis : MonoBehaviour
         optionsBox.SetActive(true);
         dialogueBox.SetActive(false);
 
-        dialogueOptionsText[0].text = "1-¿Son de canela?";
-        dialogueOptionsText[1].text = "2-No gracias, no voy con extraños.";
-        dialogueOptionsText[2].text = "3-Solo si usted toma también.";
-        dialogueOptionsText[3].text = "4-Claro";
+        dialogueOptionsText[0].text = "¿Son de canela?";
+        dialogueOptionsText[1].text = "No gracias, no voy con extraños.";
+        dialogueOptionsText[2].text = "Solo si usted toma también.";
+        dialogueOptionsText[3].text = "Claro";
 
 
 
