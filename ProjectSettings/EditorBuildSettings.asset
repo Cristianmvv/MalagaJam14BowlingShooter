@@ -6,27 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/CristianTest.unity
-    guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
     path: Assets/Scenes/Ring.unity
     guid: 8a3b7d9d61b200648987af2162756b15
-  - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-    guid: 3b3778987e7099e44aac6e10d959c236
-  - enabled: 1
-    path: Assets/Scenes/Golf.unity
-    guid: 6cd1ead6534ed7e4399997acbd01cbcc
-  - enabled: 1
-    path: Assets/Scenes/Beisbol.unity
-    guid: 6fd5ab085adb4e545a817f5ec7b412ac
-  - enabled: 1
-    path: Assets/Scenes/Bolera.unity
-    guid: d5a5df331b6bf5c4a8ffb4ec56a72674
   - enabled: 1
     path: Assets/Scenes/Escena.unity
     guid: 22b740dbe6cc64a46aaeda95610189a2
   - enabled: 1
+    path: Assets/Scenes/Beisbol.unity
+    guid: 6fd5ab085adb4e545a817f5ec7b412ac
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 3b3778987e7099e44aac6e10d959c236
+  - enabled: 1
     path: Assets/Scenes/Tennis.unity
     guid: 752e3cdc509a2524aa6f6ae02400ca37
+  - enabled: 1
+    path: Assets/Scenes/Golf.unity
+    guid: 6cd1ead6534ed7e4399997acbd01cbcc
+  - enabled: 1
+    path: Assets/Scenes/Bolera.unity
+    guid: d5a5df331b6bf5c4a8ffb4ec56a72674
   m_configObjects: {}
