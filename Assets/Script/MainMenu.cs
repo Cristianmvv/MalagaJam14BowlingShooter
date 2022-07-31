@@ -18,7 +18,7 @@ public class MainMenu : MonoBehaviour
     }
     public void Bolos()
     {
-        SceneManager.LoadScene("Bolos");
+        SceneManager.LoadScene(5);
     }
     public void Golf()
     {
