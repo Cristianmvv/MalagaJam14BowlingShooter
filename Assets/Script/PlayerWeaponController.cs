@@ -29,10 +29,8 @@ public class PlayerWeaponController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
+        if(GameManager.Instance.equipWeapon)
             SwitchWeapons(0);
-        }
     }
 
     void SwitchWeapons(int p_weaponIndex)
