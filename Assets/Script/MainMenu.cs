@@ -5,32 +5,39 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    //public AudioMixer;
+
+    public AudioSource boton;
 
 
 
     public void Tenis()
     {
+        boton.Play();
         SceneManager.LoadScene(7);
     }
     public void Beisbol()
     {
+        boton.Play();
         SceneManager.LoadScene(4);
     }
     public void Bolos()
     {
+        boton.Play();
         SceneManager.LoadScene(5);
     }
     public void Golf()
     {
+        boton.Play();
         SceneManager.LoadScene(3);
     }
     public void Boxeo()
     {
+        boton.Play();
         SceneManager.LoadScene(1);
     }
     public void Quite()
     {
+        boton.Play();
         SceneManager.LoadScene(6);
     }
 }
