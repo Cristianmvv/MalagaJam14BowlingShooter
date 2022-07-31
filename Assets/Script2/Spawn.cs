@@ -45,6 +45,6 @@ public class Spawn : MonoBehaviour
             }
             num -= chance[i];
         }
-        Invoke("SpawnEnemy", Random.Range(5, 15));
+        Invoke("SpawnEnemy", Random.Range(5, 10));
     }
 }

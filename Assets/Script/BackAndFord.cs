@@ -48,7 +48,11 @@ public class BackAndFord : MonoBehaviour
         Arrow.SetActive(false);
         Slider.gameObject.SetActive(false);
         ball.GetComponent<Rigidbody>().AddForce(-Vector3.forward * 60,ForceMode.Impulse);
+        GameManager.Instance.RunTimetable();
+        yield return new WaitForSeconds(GameManager.Instance.GetTimelineDuration());
         GameManager.Instance.canMove = true;
+        GameManager.Instance.equipWeapon = true;
+        GameManager.Instance.ActivateSpawner();
     }
 
 }
