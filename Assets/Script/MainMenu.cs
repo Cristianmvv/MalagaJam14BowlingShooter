@@ -10,11 +10,11 @@ public class MainMenu : MonoBehaviour
 
     public void Tenis()
     {
-        SceneManager.LoadScene("Tenis");
+        SceneManager.LoadScene(7);
     }
     public void Beisbol()
     {
-        SceneManager.LoadScene("Besibol");
+        SceneManager.LoadScene(4);
     }
     public void Bolos()
     {
@@ -22,14 +22,14 @@ public class MainMenu : MonoBehaviour
     }
     public void Golf()
     {
-        SceneManager.LoadScene("Golf");
+        SceneManager.LoadScene(3);
     }
     public void Boxeo()
     {
-        SceneManager.LoadScene("Boxeo");
+        SceneManager.LoadScene(1);
     }
     public void Quite()
     {
-        Application.Quit();
+        SceneManager.LoadScene(6);
     }
 }
