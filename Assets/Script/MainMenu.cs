@@ -5,22 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-   public AudioMixer;
-                public static GameMenu gm;
+   //public AudioMixer;
 
 
-
-    private void start()
-
-if (gm == null)
-        {
-            gm = this;
-            DontDestroyOnLoad(gameObject);
-}
-        else
-    Destroy(gameObject);
-
-    }
     public void Tenis()
     {
         SceneManager.LoadScene("Tenis");
@@ -40,5 +27,9 @@ if (gm == null)
     public void Boxeo()
     {
         SceneManager.LoadScene("Boxeo");
+    }
+    public void Quite()
+    {
+        Application.Quit();
     }
 }
