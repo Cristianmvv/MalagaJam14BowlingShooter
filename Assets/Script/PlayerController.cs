@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
         if (!GameManager.Instance.canMove) return;
 
         healthSlider.value = healt;
-        if(healt <=0)GameManager.Instance.canMove = false;
+        if(healt <=0)GameManager.Instance.playerDeath = true;
 
         groundedPlayer = controller.isGrounded;
         if (groundedPlayer && playerVelocity.y < 0)

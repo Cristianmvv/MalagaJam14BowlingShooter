@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 729930064439619092}
   - component: {fileID: 729930064439619093}
   m_Layer: 5
-  m_Name: PulsaA
+  m_Name: ButtonA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -142,7 +142,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.0000076293945, y: -0.733757}

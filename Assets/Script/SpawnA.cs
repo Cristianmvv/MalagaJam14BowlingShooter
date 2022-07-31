@@ -10,10 +10,10 @@ public class SpawnA   : MonoBehaviour
 
     private void Start()
     {
-        
+        InvokeRepeating("SpawnFlechas", tiempoEntreflechas, tiempoEntreflechas);
     }
 
-    private void Update()
+    /*private void Update()
     {
         if(tiempoEntreflechas <= 0)
         {
@@ -27,5 +27,11 @@ public class SpawnA   : MonoBehaviour
         {
             tiempoEntreflechas-=Time.deltaTime;
         }
+    }*/
+
+    public void SpawnFlechas()
+    {
+        int random = Random.Range(0, Letras.Length);
+        Instantiate(Letras[0], transform.position, Quaternion.identity);
     }
 }

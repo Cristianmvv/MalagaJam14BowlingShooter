@@ -50,6 +50,7 @@ public class WeaponController : MonoBehaviour
 
     private void Update()
     {
+        if (GameManager.Instance.playerDeath) return;
         if (Input.GetButtonDown("Fire1"))
             TryShoot();
 

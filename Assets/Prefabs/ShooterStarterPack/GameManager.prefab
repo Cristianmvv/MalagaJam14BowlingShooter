@@ -44,3 +44,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 216a8f31e81828a448bb6878c5814603, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bowllingSpawner:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  streetSpawner: []
+  endPanel: {fileID: 0}
+  timeTable: {fileID: 0}
+  canMove: 0
+  equipWeapon: 0
+  playerDeath: 0

@@ -31,7 +31,9 @@ public class GameManager : MonoBehaviour
         if (playerDeath)
         {
             endPanel.SetActive(true);
+            print("True");
             canMove = false;
+            Cursor.lockState = CursorLockMode.None;
         }
     }
 
