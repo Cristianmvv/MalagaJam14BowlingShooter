@@ -5,31 +5,39 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-   //public AudioMixer;
+
+    public AudioSource boton;
+
 
 
     public void Tenis()
     {
-        SceneManager.LoadScene("Tenis");
+        boton.Play();
+        SceneManager.LoadScene(7);
     }
     public void Beisbol()
     {
-        SceneManager.LoadScene("Besibol");
+        boton.Play();
+        SceneManager.LoadScene(4);
     }
     public void Bolos()
     {
+        boton.Play();
         SceneManager.LoadScene(5);
     }
     public void Golf()
     {
-        SceneManager.LoadScene("Golf");
+        boton.Play();
+        SceneManager.LoadScene(3);
     }
     public void Boxeo()
     {
-        SceneManager.LoadScene("Boxeo");
+        boton.Play();
+        SceneManager.LoadScene(1);
     }
     public void Quite()
     {
-        Application.Quit();
+        boton.Play();
+        SceneManager.LoadScene(6);
     }
 }
