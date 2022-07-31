@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class DialoguePleaseDontLookAtThis : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class DialoguePleaseDontLookAtThis : MonoBehaviour
     [SerializeField] GameObject optionsBox;
     [SerializeField] TextMeshProUGUI dialogueText;
     [SerializeField] TextMeshProUGUI[] dialogueOptionsText;
+    public GameObject win;
     //TextMeshProUGUI[] dialogueOptionsText;
 
     void Start()
@@ -137,5 +139,11 @@ public class DialoguePleaseDontLookAtThis : MonoBehaviour
         dialogueBox.SetActive(true);
 
         dialogueText.text = "''Dos años después tu y matilda os casáis. Os habéis convertido en grandes luchadores y vivís felizmente en una playa de Miami''";
+
+        win.gameObject.SetActive(true);
+        yield return new WaitForSeconds(0.1f);
+
+        SceneManager.LoadScene("MainMenu");
     }
+
 }
