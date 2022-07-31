@@ -10,6 +10,9 @@ public class BackAndFord : MonoBehaviour
     [SerializeField] GameObject Arrow, ball;
     [SerializeField] Slider Slider;
 
+    [SerializeField] AudioSource audioSource;
+    [SerializeField] AudioClip combatAudio;
+
     float timer;
     bool activateArrow, activateSlider;
 
@@ -49,10 +52,17 @@ public class BackAndFord : MonoBehaviour
         Slider.gameObject.SetActive(false);
         ball.GetComponent<Rigidbody>().AddForce(-Vector3.forward * 60,ForceMode.Impulse);
         GameManager.Instance.RunTimetable();
+        Invoke("ChangeMusic", 7);
         yield return new WaitForSeconds(GameManager.Instance.GetTimelineDuration());
         GameManager.Instance.canMove = true;
         GameManager.Instance.equipWeapon = true;
         GameManager.Instance.ActivateSpawner();
+    }
+
+    void ChangeMusic()
+    {
+        audioSource.clip = combatAudio;
+        audioSource.Play();
     }
 
 }

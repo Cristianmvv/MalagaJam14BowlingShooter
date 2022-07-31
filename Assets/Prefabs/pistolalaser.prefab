@@ -115,9 +115,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d056b60351eb8de4fb86172564534e7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shootSound: {fileID: 0}
-  emptySound: {fileID: 0}
-  reloadSound: {fileID: 0}
+  shootSound: {fileID: 8300000, guid: f495b4a3db39af44f8bbde365071a0e1, type: 3}
+  emptySound: {fileID: 8300000, guid: b9373a8b2b10cb048978ec87f04126fb, type: 3}
+  reloadSound: {fileID: 8300000, guid: 332b061b9eb29fc4ab336f04332b3cc6, type: 3}
   fireRange: 200
   recoilForce: -4
   fireRate: 0.06

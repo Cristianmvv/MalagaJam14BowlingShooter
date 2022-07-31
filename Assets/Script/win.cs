@@ -17,6 +17,7 @@ public class win : MonoBehaviour
     public float Go;
     public float valortotal;
     public Slider sliderPrefab;
+    public AudioSource golpe;
 
 
     
@@ -53,10 +54,12 @@ public class win : MonoBehaviour
             Uno.gameObject.SetActive(false);
             if (Input.GetKeyDown(KeyCode.S) && parar == false)
             {
+                golpe.Play();
                 equipoazul++;
             }
             if (Input.GetKeyDown(KeyCode.K) && parar == false)
             {
+                golpe.Play();
                 equiporojo++;
             }
             temporizador += Time.deltaTime;
