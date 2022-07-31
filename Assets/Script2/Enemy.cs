@@ -9,11 +9,16 @@ public class Enemy : MonoBehaviour
     public int maxHealth, health;
     public bool die;
     public int score;
+    ParticleSystem explosion;
+    AudioSource audioSource;
+    public GameObject mesh;
 
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         agent = GetComponent<NavMeshAgent>();
+        explosion = GetComponentInChildren<ParticleSystem>();
+        audioSource = GetComponent<AudioSource>();
     }
     private void FixedUpdate()
     {
@@ -31,8 +36,17 @@ public class Enemy : MonoBehaviour
             agent.SetDestination(transform.position);
             GetComponent<Collider>().enabled = false;
             agent.enabled = false;
-            Invoke("StartSinking", 2);
+            //Invoke("StartSinking", 2);
+            explosion.Play();
+            audioSource.Play();
+            mesh.SetActive(false);
+            Invoke("OnDestroyInvoke", 1.2f);
         }
+    }
+
+    private void OnDestroyInvoke()
+    {
+        Destroy(gameObject);
     }
 
     public void StartSinking()

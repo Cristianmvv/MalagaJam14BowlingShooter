@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] Slider healthSlider;
     [SerializeField] int healt = 100;
-    [SerializeField] float healtTick = 0.05f;
+    [SerializeField] float healtTick = 0.01f;
 
     Vector3 playerVelocity;
     private CharacterController controller;
@@ -59,13 +59,18 @@ public class PlayerController : MonoBehaviour
         controller.Move(playerVelocity * Time.deltaTime);
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.tag == "Enemy")
         {
             CancelInvoke("HealtUp");
             InvokeRepeating("HealtDown", 0, healtTick);
         }
+        //else
+        //{
+        //    CancelInvoke("HealtDown");
+        //    InvokeRepeating("HealtUp", 0, 0.5f);
+        //}
     }
 
     private void OnTriggerExit(Collider other)
@@ -73,7 +78,7 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.tag == "Enemy")
         {
             CancelInvoke("HealtDown");
-            InvokeRepeating("HealtUp", 0, healtTick*1.5f);
+            InvokeRepeating("HealtUp", 0, 0.5f);
         }
     }
 
